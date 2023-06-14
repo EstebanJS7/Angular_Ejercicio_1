@@ -1,0 +1,20 @@
+<div class="container d-flex flex-column align-items-center mt-2">
+    <div *ngFor="let reporte of reportes" class="card mb-3" style="max-width: 550px;">
+      <div class="row g-0 bg-lightrounded">
+        <div class="col-md-4 d-flex align-items-start justify-content-center">
+          <img src={{reporte.img}} class="img-fluid px-1 mt-3" alt="foto de mascotas">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-primary">{{reporte.titulo}}</h5>
+            <p class="card-text fw-bold small">Ult. vez visto el {{reporte.fechaUltimaVezVisto}}</p>
+            <p class="card-text">{{reporte.descripcion}}</p>
+            <p class="card-text small">Contacto: {{reporte.telefono}}</p>
+            <p class="card-text"><small class="text-muted">{{reporte.pais}}</small></p>
+            <a class="btn btn-warning" href={{reporte.linkCompleto}} role="button">Ver Reporte Completo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
