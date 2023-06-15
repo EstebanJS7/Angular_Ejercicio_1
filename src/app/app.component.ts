@@ -29,4 +29,30 @@ export class AppComponent {
       visible: false
     },
   ];
+  nuevoReporte = {
+    img: '',
+    titulo: '',
+    descripcion: '',
+    fechaUltimaVezVisto: '',
+    telefono: '',
+    pais: 'Paraguay',
+    linkCompleto: '',
+    visible: true
+  };
+
+  agregarReporte() {
+    this.reportes.push(this.nuevoReporte);
+    this.nuevoReporte = {
+      img: '',
+      titulo: '',
+      descripcion: '',
+      fechaUltimaVezVisto: '',
+      telefono: '',
+      pais: 'Paraguay',
+      linkCompleto: '',
+      visible: true
+    };
+
+   
+  }
 }
